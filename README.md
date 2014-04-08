@@ -16,6 +16,13 @@ sudo apt-get install python-software-properties python g++ make nodejs
 # install gulp and coffee via node
 sudo npm install -g gulp
 sudo npm install -g coffee-script
+
+# install gulp modules
+npm install gulp
+npm install gulp-util
+
+# install dependencies
+npm install
 ````
 
 Then clone this repository
@@ -24,7 +31,7 @@ Then clone this repository
 git clone git@github.com:nazgum/phaser-game-template.git
 ````
 
-The main folder you work out of is src/coffee.
+cd into it and do `npm install` to grab the node dependencies.
 
 ### Go Gulp
 To go to work start `gulp` in your working directory.  This will start a server on localhost:9000 to work on that autoreloads whenever you make changes.
