@@ -4,8 +4,7 @@ Phaser Game Template
 A quick starting template for creating a new game with phaser.io
 
 
-### Requirements
-
+### Getting Started
 First you'll need a few starting requirements; namely node, gulp, and coffeescript
 
 ````
@@ -19,11 +18,11 @@ sudo npm install -g gulp
 sudo npm install -g coffee-script
 ````
 
-## Quick Start
-
-First you mu
-Clone this repository to your
+Then simply clone this repository
 
 ````
 git clone git@github.com:nazgum/phaser-game-template.git
 ````
+
+### Go Gulp
+To go to work start `gulp` in your working directory.  To package it up with CocoonJS or PhoneGap run `gulp build` and zip up the dist folder.
