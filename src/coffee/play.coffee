@@ -1,7 +1,5 @@
 class Play extends Phaser.State
 
-  preload: ->
-
   create: ->
     @game.stage.backgroundColor = '#A4DF83'
 

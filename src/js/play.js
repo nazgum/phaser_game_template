@@ -9,8 +9,6 @@ Play = (function(_super) {
     return Play.__super__.constructor.apply(this, arguments);
   }
 
-  Play.prototype.preload = function() {};
-
   Play.prototype.create = function() {
     var text_style, title_style;
     this.game.stage.backgroundColor = '#A4DF83';

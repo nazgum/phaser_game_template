@@ -9,8 +9,6 @@ Gameover = (function(_super) {
     return Gameover.__super__.constructor.apply(this, arguments);
   }
 
-  Gameover.prototype.preload = function() {};
-
   Gameover.prototype.create = function() {
     var text_style, title_style;
     this.game.stage.backgroundColor = '#DF838A';

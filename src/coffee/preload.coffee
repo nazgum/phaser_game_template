@@ -3,7 +3,6 @@ class Preload extends Phaser.State
   @asset: null
   @ready: false
 
-
   preload: ->
     @asset = @add.sprite(@width/2, @height/2, 'preloader')
     @asset.anchor.setTo(0.5, 0.5)

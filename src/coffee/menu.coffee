@@ -1,5 +1,4 @@
 class Menu extends Phaser.State
-  preload: ->
 
   create: ->
     @game.stage.backgroundColor = '#83D0DF'

@@ -9,8 +9,6 @@ Boot = (function(_super) {
     return Boot.__super__.constructor.apply(this, arguments);
   }
 
-  Boot.prototype.preload = function() {};
-
   Boot.prototype.create = function() {
     this.game.stage.backgroundColor = '#83D0DF';
     return this.game.state.start('preload');

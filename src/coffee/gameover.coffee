@@ -1,5 +1,4 @@
 class Gameover extends Phaser.State
-  preload: ->
 
   create: ->
     @game.stage.backgroundColor = '#DF838A'

@@ -9,8 +9,6 @@ Menu = (function(_super) {
     return Menu.__super__.constructor.apply(this, arguments);
   }
 
-  Menu.prototype.preload = function() {};
-
   Menu.prototype.create = function() {
     var text_style, title_style;
     this.game.stage.backgroundColor = '#83D0DF';
