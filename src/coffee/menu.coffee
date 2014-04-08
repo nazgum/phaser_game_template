@@ -21,5 +21,4 @@ class Menu extends Phaser.State
     @instructionsText.anchor.setTo(0.5, 0.5)
 
   update: ->
-    if @game.input.activePointer.justPressed()
-      @game.state.start 'play'
+    @game.state.start('play') if @game.input.activePointer.justPressed()

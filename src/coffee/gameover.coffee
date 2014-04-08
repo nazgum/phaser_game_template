@@ -21,5 +21,4 @@ class Gameover extends Phaser.State
     @instructionsText.anchor.setTo(0.5, 0.5)
 
   update: ->
-    if @game.input.activePointer.justPressed()
-      @game.state.start 'menu'
+    @game.state.start('menu') if @game.input.activePointer.justPressed()

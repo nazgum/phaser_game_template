@@ -22,5 +22,4 @@ class Play extends Phaser.State
     @instructionsText.anchor.setTo(0.5, 0.5)
 
   update: ->
-    if @game.input.activePointer.justPressed()
-      @game.state.start 'gameover'
+    @game.state.start('gameover') if @game.input.activePointer.justPressed()
