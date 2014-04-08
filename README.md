@@ -1,7 +1,7 @@
 Phaser Game Template
 ====================
 
-A quick starting template for creating a new game with phaser.io and coffeescript
+A quick starting template for creating a new game with [phaser.io](http://phaser.io) and coffeescript
 
 
 ### Getting Started
