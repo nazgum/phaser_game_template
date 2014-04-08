@@ -12,7 +12,7 @@ Boot = (function(_super) {
   Boot.prototype.preload = function() {};
 
   Boot.prototype.create = function() {
-    this.game.stage.backgroundColor = '#000000';
+    this.game.stage.backgroundColor = '#83D0DF';
     return this.game.state.start('preload');
   };
 

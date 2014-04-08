@@ -9,14 +9,31 @@ Preload = (function(_super) {
     return Preload.__super__.constructor.apply(this, arguments);
   }
 
-  Preload.prototype.preload = function() {};
+  Preload.asset = null;
 
-  Preload.prototype.create = function() {
-    this.game.stage.backgroundColor = '#FFFFFF';
-    return this.game.state.start('menu');
+  Preload.ready = false;
+
+  Preload.prototype.preload = function() {
+    this.asset = this.add.sprite(this.width / 2, this.height / 2, 'preloader');
+    this.asset.anchor.setTo(0.5, 0.5);
+    this.load.onLoadComplete.addOnce(this.onLoadComplete, this);
+    this.load.setPreloadSprite(this.asset);
+    return this.load.image('logo', 'assets/phaser-logo.png');
   };
 
-  Preload.prototype.update = function() {};
+  Preload.prototype.create = function() {
+    return this.asset.cropEnabled = false;
+  };
+
+  Preload.prototype.update = function() {
+    if (this.ready) {
+      return this.game.state.start('menu');
+    }
+  };
+
+  Preload.prototype.onLoadComplete = function() {
+    return this.ready = true;
+  };
 
   return Preload;
 
