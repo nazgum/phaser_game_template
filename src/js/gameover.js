@@ -24,9 +24,9 @@ Gameover = (function(_super) {
       fill: '#ffffff',
       align: 'center'
     };
-    this.titleText = this.game.add.text(this.game.world.centerX, 300, 'Game\n Over', title_style);
+    this.titleText = this.game.add.text(this.game.world.centerX, 180, 'Game\n Over', title_style);
     this.titleText.anchor.setTo(0.5, 0.5);
-    this.instructionsText = this.game.add.text(this.game.world.centerX, 400, 'Click for menu', text_style);
+    this.instructionsText = this.game.add.text(this.game.world.centerX, 280, 'Click for menu', text_style);
     return this.instructionsText.anchor.setTo(0.5, 0.5);
   };
 

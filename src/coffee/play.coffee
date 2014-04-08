@@ -8,10 +8,10 @@ class Play extends Phaser.State
     text_style  = { font: '16px Arial', fill: '#000000', align: 'center'}
     title_style = { font: '65px Arial', fill: '#000000', align: 'center'}
 
-    @titleText = @game.add.text(@game.world.centerX, 300, 'Play', title_style)
+    @titleText = @game.add.text(@game.world.centerX, 180, 'Play', title_style)
     @titleText.anchor.setTo(0.5, 0.5)
 
-    @instructionsText = @game.add.text(@game.world.centerX, 400, 'Click to gameover', text_style)
+    @instructionsText = @game.add.text(@game.world.centerX, 240, 'Click to gameover', text_style)
     @instructionsText.anchor.setTo(0.5, 0.5)
 
   update: ->

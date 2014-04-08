@@ -2,11 +2,9 @@ var gulp = require('gulp')
   , gutil = require('gulp-util')
   , concat = require('gulp-concat')
   , rename = require('gulp-rename')
-  , jshint = require('gulp-jshint')
   , uglify = require('gulp-uglify')
   , minifycss = require('gulp-minify-css')
   , htmlreplace = require('gulp-html-replace')
-  , plumber = require('gulp-plumber')
   , coffee = require('gulp-coffee')
   , connect = require('gulp-connect')
   , paths;
@@ -16,7 +14,7 @@ paths = {
   html:   'src/*.html',
   css:    'src/css/*.css',
   coffee: 'src/coffee/*.coffee',
-  js:     ['src/js/*.js', 'src/js/**/*.js', '!src/js/lib/*.js'],
+  js:     'src/js/*.js',
   lib:    'src/js/lib/*.js',
   dist:   './dist/'
 };
@@ -29,7 +27,7 @@ gulp.task('copy', function () {
   gulp.src('src/js/lib/phaser.min.js').pipe(gulp.dest(paths.dist));
 });
 
-gulp.task('uglify', ['jshint'], function () {
+gulp.task('uglify', function () {
   gulp.src(paths.js)
     .pipe(concat('bundle.min.js'))
     .pipe(gulp.dest(paths.dist))
@@ -72,7 +70,6 @@ gulp.task('html', function(){
 // Compile Coffee
 gulp.task('coffee', function() {
   gulp.src(paths.coffee)
-    .pipe(plumber())
     .pipe(coffee({bare: true}).on('error', gutil.log))
     .pipe(gulp.dest('./src/js'))
 });
@@ -87,7 +84,6 @@ gulp.task('connect', function() {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(paths.js, ['jshint']);
   gulp.watch(paths.coffee, ['coffee']);
   gulp.watch([paths.html, paths.css, paths.js], ['html']);
 });
