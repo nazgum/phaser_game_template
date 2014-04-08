@@ -1,7 +1,7 @@
 Phaser Game Template
 ====================
 
-A quick starting template for creating a new game with phaser.io
+A quick starting template for creating a new game with phaser.io and coffeescript
 
 
 ### Getting Started
@@ -18,13 +18,13 @@ sudo npm install -g gulp
 sudo npm install -g coffee-script
 ````
 
-Then simply clone this repository
+Then clone this repository
 
 ````
 git clone git@github.com:nazgum/phaser-game-template.git
 ````
 
-The main folder you work out of is src/coffee, where all your coffeescript goes to create your game.
+The main folder you work out of is src/coffee.
 
 ### Go Gulp
 To go to work start `gulp` in your working directory.  This will start a server on localhost:9000 to work on that autoreloads whenever you make changes.
