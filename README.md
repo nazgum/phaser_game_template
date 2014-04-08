@@ -24,5 +24,16 @@ Then simply clone this repository
 git clone git@github.com:nazgum/phaser-game-template.git
 ````
 
+The main folder you work out of is src/coffee, where all your coffeescript goes to create your game.
+
 ### Go Gulp
-To go to work start `gulp` in your working directory.  To package it up with CocoonJS or PhoneGap run `gulp build` and zip up the dist folder.
+To go to work start `gulp` in your working directory.  This will start a server on localhost:9000 to work on that autoreloads whenever you make changes.
+
+To package up your final product with CocoonJS or PhoneGap run `gulp build` and zip up the dist folder.
+
+### Phaser generators
+Great generators for Phaser using Yeoman.io
+
+* https://github.com/codevinsky/generator-phaser-official
+* https://github.com/julien/generator-phaser
+* https://github.com/rcolinray/generator-phaser-typescript
