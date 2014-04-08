@@ -4,4 +4,4 @@ class Boot extends Phaser.State
 
   create: ->
     @game.stage.backgroundColor = '#000000'
-    @game.state.start('preload')
+    @game.state.start 'preload'

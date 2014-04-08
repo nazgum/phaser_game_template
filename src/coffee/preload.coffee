@@ -2,6 +2,7 @@ class Preload extends Phaser.State
   preload: ->
 
   create: ->
-    @game.state.start('menu')
+    @game.stage.backgroundColor = '#FFFFFF'
+    @game.state.start 'menu'
 
   update: ->

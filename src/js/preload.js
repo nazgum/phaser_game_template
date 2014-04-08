@@ -12,6 +12,7 @@ Preload = (function(_super) {
   Preload.prototype.preload = function() {};
 
   Preload.prototype.create = function() {
+    this.game.stage.backgroundColor = '#FFFFFF';
     return this.game.state.start('menu');
   };
 

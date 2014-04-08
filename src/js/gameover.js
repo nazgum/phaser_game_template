@@ -16,12 +16,12 @@ Gameover = (function(_super) {
     this.game.stage.backgroundColor = '#DF838A';
     text_style = {
       font: '16px Arial',
-      fill: '#ffffff',
+      fill: '#000000',
       align: 'center'
     };
     title_style = {
       font: '65px Arial',
-      fill: '#ffffff',
+      fill: '#000000',
       align: 'center'
     };
     this.titleText = this.game.add.text(this.game.world.centerX, 180, 'Game\n Over', title_style);

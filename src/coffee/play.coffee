@@ -5,8 +5,15 @@ class Play extends Phaser.State
   create: ->
     @game.stage.backgroundColor = '#A4DF83'
 
-    text_style  = { font: '16px Arial', fill: '#000000', align: 'center'}
-    title_style = { font: '65px Arial', fill: '#000000', align: 'center'}
+    text_style  =
+      font: '16px Arial'
+      fill: '#000000'
+      align: 'center'
+
+    title_style =
+      font: '65px Arial'
+      fill: '#000000'
+      align: 'center'
 
     @titleText = @game.add.text(@game.world.centerX, 180, 'Play', title_style)
     @titleText.anchor.setTo(0.5, 0.5)
@@ -16,4 +23,4 @@ class Play extends Phaser.State
 
   update: ->
     if @game.input.activePointer.justPressed()
-      @game.state.start('gameover')
+      @game.state.start 'gameover'
