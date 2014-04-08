@@ -16,13 +16,6 @@ sudo apt-get install python-software-properties python g++ make nodejs
 # install gulp and coffee via node
 sudo npm install -g gulp
 sudo npm install -g coffee-script
-
-# install gulp modules
-npm install gulp
-npm install gulp-util
-
-# install dependencies
-npm install
 ````
 
 Then clone this repository
